@@ -1,0 +1,14 @@
+.navbar-nav {
+    font-size: 20px;
+    a {
+        margin-right: 10px;
+        color: darkgray;
+        text-decoration: none;
+        }
+
+        &:active {
+            color: white;
+            text-decoration: none;
+        }
+
+    }

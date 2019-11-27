@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f7f7f7;
+}
+#root {
+  margin: 0;
+  background: #f7f7f7;
+}
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  background: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+
+    .navigation {
+      padding: 20px;
+      align-items: center;
+      grid-area: nav;
+      background: #343a40;
+      grid-area: 1 / 1 / 2 / 13;
+    }
+    .app__area {
+      align-self: start;
+      grid-area: 2 / 1 / 13 / 13;
+    
+
+    }
+}
+
