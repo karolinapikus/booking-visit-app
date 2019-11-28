@@ -3,11 +3,21 @@ import './Main.scss';
 
 class Main extends Component {
     render(){
-        return (
-        <div className="main__content">
-            <h1>siema</h1>
-        </div>
-        )
+        if (this.props.user === null) {
+            return (
+                <div className="main__content">
+                <h2>You need to log in to use this app.</h2>
+                </div>
+            )
+        } else {
+            return (
+                <div className="main__content">
+                    <h2>Hello, <img alt="User avatar" src={this.props.user.photoURL}/> {this.props.user.displayName}</h2>
+                    
+                </div>
+                )
+        }
+        
     }
 }
 

@@ -27,6 +27,12 @@ body {
       grid-area: nav;
       background: #343a40;
       grid-area: 1 / 1 / 2 / 13;
+      font-size: 20px;
+    a {
+        margin-right: 10px;
+        color: darkgray;
+        text-decoration: none;
+        }
     }
     .app__area {
       align-self: start;
