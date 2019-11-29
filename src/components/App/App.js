@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import { auth, provider } from '../../firebase';
 
 import './App.scss';
@@ -11,6 +11,7 @@ import AddClient from '../AddClient/AddClient';
 import ClientList from '../ClientList/ClientList';
 import AddService from '../AddService/AddService';
 import ServiceList from '../ServiceList/ServiceList';
+import ServiceCat from '../ServiceCat/ServiceCat';
 import Calendar from '../Calendar/Calendar';
 
 
@@ -62,6 +63,7 @@ class App extends Component {
             <Route path="/clients/list" component={ClientList} />
             <Route path="/services/add" component={AddService} />
             <Route path="/services/list" component={ServiceList} />
+            <Route path="/services/categories" component={ServiceCat} />
             <Route path="/calendar" component={Calendar} />
           </div>
           <div className="app__footer">

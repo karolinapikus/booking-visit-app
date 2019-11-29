@@ -1,0 +1,29 @@
+.notes__list {
+    padding: 20px;
+    line-height: 1em;
+
+    h3 {
+        text-align: center;
+    }
+    ul {
+        max-height: 200px;
+        overflow: auto;
+        list-style: none;
+        li{
+            border-bottom: 1px solid black;
+            margin-top: 10px;
+        }
+    }
+    .delete__icon {
+        color: #C70039;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .edit__icon {
+        color: #FFC300;
+        &:hover{
+            cursor: pointer;
+        }
+}
+}

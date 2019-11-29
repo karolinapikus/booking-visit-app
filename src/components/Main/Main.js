@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './Main.scss';
+import Notes from "../Notes/Notes"
+import NotesList from "../NotesList/NotesList"
 
 class Main extends Component {
     render(){
@@ -13,6 +15,15 @@ class Main extends Component {
             return (
                 <div className="main__content">
                     <h2>Hello, <img alt="User avatar" src={this.props.user.photoURL}/> {this.props.user.displayName}</h2>
+                    <div className="notes__container">
+                    <div className="notes__block">
+                    <Notes author={this.props.user.displayName}/>
+                    </div>
+                    <div className="notes__block">
+                        <NotesList author={this.props.user.displayName}/>
+                    </div>
+                    </div>
+
                     
                 </div>
                 )

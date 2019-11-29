@@ -24,7 +24,7 @@ class Navigation extends Component {
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand>SalonMenago</Navbar.Brand>
           <Nav.Link><Link to="/">Home</Link></Nav.Link>
-          <Nav.Link><button onClick={this.handleLogin}>Log In</button></Nav.Link>
+          <Nav.Link><button className="login__button" onClick={this.handleLogin}>Log In</button></Nav.Link>
            
         </Navbar>
       )
@@ -44,7 +44,7 @@ class Navigation extends Component {
               <NavDropdown.Item ><Link to="/services/list">Services List</Link></NavDropdown.Item>
             </NavDropdown>
             <Nav.Link><Link to="/calendar">Calendar</Link></Nav.Link>
-            <Nav.Link><button onClick={this.handleLogout}>Log Out</button></Nav.Link>
+            <Nav.Link><button className="login__button" onClick={this.handleLogout}>Log Out</button></Nav.Link>
           </Nav>
         </Navbar>
       )
