@@ -3,6 +3,10 @@ Application for beauty salons/spa/hairdressers to manage the client base
 services and appointments.
 
 ### UpdateLog  
+`29.11.2019`
+1. Calendar connection with firebase added.
+2. Notes functionality on home screen added.
+
 `28.11.2019`  
 1. Service list functionality added.
 2. Log in and out with Google Authenticate added
